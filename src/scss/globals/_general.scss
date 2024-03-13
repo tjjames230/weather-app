@@ -1,0 +1,15 @@
+@use "../utilities/" as *;
+@use "colors" as *;
+@use "fonts" as *;
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: rem(16);
+  color: $clr-gray-dk;
+  background-color: $clr-gray-lt;
+  line-height: 1.5;
+}
