@@ -1,0 +1,11 @@
+@use "../utilities/" as *;
+
+form {
+	width: rem(300);
+	display: flex;
+	gap: rem(10);
+
+	input {
+		flex-grow: 1;
+	}
+}

@@ -12,6 +12,6 @@ async function displayWeather(value) {
 
 function updateTemp(obj) {
 	location.textContent = obj.location;
-	condition.textContent = obj.condition;
-	temperature.textContent = obj.temperature;
+	condition.textContent = "Condition: " + obj.condition;
+	temperature.textContent = obj.temperature + "\u00B0 f";
 }
