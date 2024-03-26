@@ -1,12 +1,14 @@
 import { getTemperature } from "./js/weather.js";
+import { displayWeather } from "./js/display.js";
+import "./js/display.js";
 import "./scss/styles.scss";
 
 const search = document.querySelector("#search");
 const searchBtn = document.querySelector("#search-btn");
-let searchValue = "Minneapolis";
 
 searchBtn.addEventListener("click", (e) => {
 	e.preventDefault();
-	searchValue = search.value;
+	const searchValue = search.value;
 	getTemperature(searchValue);
+	displayWeather(searchValue);
 });
