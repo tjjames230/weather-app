@@ -1,0 +1,22 @@
+@use "../utilities/" as *;
+
+#main-ctn {
+	width: rem(300);
+	background-color: navy;
+	padding: rem(25);
+	color: white;
+	text-align: center;
+	border-radius: rem(10);
+
+	h2 {
+		font-size: rem(16);
+	}
+
+	p {
+		font-size: rem(16);
+	}
+
+	#temperature {
+		font-size: rem(36);
+	}
+}
