@@ -17,6 +17,6 @@ async function getTemperature(location) {
 
 		return forecastInfo;
 	} catch (error) {
-		console.log("ERROR! Please enter a correct city.");
+		alert("ERROR! Please enter a correct city.");
 	}
 }

@@ -9,6 +9,5 @@ const searchBtn = document.querySelector("#search-btn");
 searchBtn.addEventListener("click", (e) => {
 	e.preventDefault();
 	const searchValue = search.value;
-	getTemperature(searchValue);
 	displayWeather(searchValue);
 });
