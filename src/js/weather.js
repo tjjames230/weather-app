@@ -12,7 +12,7 @@ async function getTemperature(location) {
 		const forecastInfo = {
 			location: `${data.location.name}, ${data.location.region}`,
 			condition: data.current.condition.text,
-			temperature: data.current.temp_f,
+			temperature: parseInt(data.current.temp_f),
 		};
 
 		return forecastInfo;
