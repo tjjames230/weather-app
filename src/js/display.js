@@ -1,11 +1,11 @@
-export { displayWeather };
 import { getTemperature } from "./weather.js";
 
 const location = document.querySelector("#location");
 const condition = document.querySelector("#condition");
 const temperature = document.querySelector("#temperature");
+const conditionCtn = document.querySelector("#condition-ctn");
 
-async function displayWeather(value) {
+export async function displayWeather(value) {
 	let forecastInfo = await getTemperature(value);
 	updateTemp(forecastInfo);
 }
@@ -13,5 +13,6 @@ async function displayWeather(value) {
 function updateTemp(obj) {
 	location.textContent = obj.location;
 	condition.textContent = "Condition: " + obj.condition;
+	conditionCtn.innerHTML = `<img src="${obj.conditionImage}" />`;
 	temperature.textContent = obj.temperature + "\u00B0 f";
 }
